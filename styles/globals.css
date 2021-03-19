@@ -1,9 +1,10 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html, body, #root {
+  height: 100%;
+}
+body{
+  font: 400 14px Roboto, sans-serif;
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 a {
@@ -11,6 +12,40 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+input, button, textarea{
+  font: 400 18px Roboto, sans-serif;
 }
+
+button{
+  cursor: pointer;
+}
+
+button {
+  width: 80px;
+  height: 60px;
+  background: #1387c0;
+  border: 0;
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: 700;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition: filter 0.2s;
+}
+button:hover {
+  filter: brightness(90%);
+}
+
+input{
+  width: 15rem;
+  height: 36px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
